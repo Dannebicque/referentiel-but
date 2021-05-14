@@ -1,32 +1,32 @@
 {
-  "MMI": {
-    "libelle": "Métiers du multimédia et de l'intenet",
-    "sigle": "MMI",
-    "siteweb": "bttps://iutmmi.fr"
-  },
-  "TC": {
-    "sigle": "TC",
-    "libelle": "Techniques de Commercialisation",
-    "siteweb": "bttps://iuttc.fr"
-  },
-  "GEII": {
-    "libelle": "Techniques de Commercialisation",
-    "sigle": "GEII",
-    "siteweb": "bttps://iuttx.fr"
-  },
-  "GMP": {
-    "libelle": "Techniques de Commercialisation",
-    "sigle": "GMP",
-    "siteweb": "bttps://iuttx.fr"
-  },
-  "CJ": {
-    "libelle": "Techniques de Commercialisation",
-    "sigle": "CJ",
-    "siteweb": "bttps://iuttx.fr"
-  },
-  "GEA": {
-    "libelle": "Techniques de Commercialisation",
-    "sigle": "GEA",
-    "siteweb": "https://iuttx.fr"
-  }
+    "MMI": {
+      "libelle": "Métiers du multimédia et de l'intenet",
+      "sigle": "MMI",
+      "siteweb": "bttps://iutmmi.fr"
+    },
+    "TC": {
+      "sigle": "TC",
+      "libelle": "Techniques de Commercialisation",
+      "siteweb": "bttps://iuttc.fr"
+    },
+    "GEII": {
+      "libelle": "Techniques de Commercialisation",
+      "sigle": "GEII",
+      "siteweb": "bttps://iuttx.fr"
+    },
+    "GMP": {
+      "libelle": "Techniques de Commercialisation",
+      "sigle": "GMP",
+      "siteweb": "bttps://iuttx.fr"
+    },
+    "CJ": {
+      "libelle": "Techniques de Commercialisation",
+      "sigle": "CJ",
+      "siteweb": "bttps://iuttx.fr"
+    },
+    "GEA": {
+      "libelle": "Techniques de Commercialisation",
+      "sigle": "GEA",
+      "siteweb": "https://iuttx.fr"
+    }
 }

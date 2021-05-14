@@ -9,7 +9,7 @@
           <Competence :competence="comp" :couleur="comp.$.couleur" />
         </b-tab>
       </b-tabs>
-      <NuxtLink :to="`/`+specialite.sigle">
+      <NuxtLink :to="`/`+ sigle">
         Retour
       </NuxtLink>
     </div>
@@ -36,7 +36,7 @@ export default {
   },
   mounted () {
     this.sigle = this.$route.params.specialite
-    this.specialite = this.specialites[this.$route.params.specialite]
+    this.specialite = this.specialites[this.Sigle]
   }
 }
 </script>

@@ -5,11 +5,26 @@
       <h1 class="title">
         Référentiels de Compétences et de Formation des 24 spécialités de Bachelor Universitaire de Technologie (B.U.T.)
       </h1>
-      <div>
-        <div v-for="specialite in specialites" :key="specialite.sigle">
-          <NuxtLink :to="`/`+specialite.sigle">
-            {{ specialite.sigle }}
-          </NuxtLink>
+      <div class="row">
+        <div
+          class="col-4"
+          v-for="specialite in specialitesFiltre"
+          :key="specialite.sigle"
+        >
+          <b-card
+            :title="specialite.sigle"
+            img-src="https://picsum.photos/600/300/?image=25"
+            img-alt="Image"
+            img-top
+            style="max-width: 20rem;"
+            class="mb-2"
+          >
+            <b-card-text>
+              {{ specialite.libelle }}
+            </b-card-text>
+
+            <b-button :to="`/`+specialite.sigle" variant="primary">Voir les référentiels</b-button>
+          </b-card>
         </div>
       </div>
       <NuxtLink to="/about">
@@ -26,6 +41,17 @@ export default {
   async asyncData ({ $content }) {
     const specialites = await $content(conf.SPECIALITES).fetch()
     return { specialites }
+  },
+  computed: {
+    specialitesFiltre () {
+      delete this.specialites.slug
+      delete this.specialites.dir
+      delete this.specialites.path
+      delete this.specialites.createdAt
+      delete this.specialites.updatedAt
+      delete this.specialites.extension
+      return this.specialites
+    }
   }
 }
 </script>
